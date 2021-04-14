@@ -38,8 +38,8 @@ async function pageOne() {
     } catch (err) {
       console.log(err);
     }
-    console.log(productInfo);
   });
+  console.log(productInfo);
 }
 
 async function pageTwo() {
@@ -52,6 +52,7 @@ async function pageThree() {
   const { data } = await axios.get(
     "https://www.sephora.com/api/catalog/categories/cat1960033/products?currentPage=3&pageSize=300&content=true&includeRegionsMap=true"
   );
+  console.log(data.products);
 }
 
 async function pageFour() {
